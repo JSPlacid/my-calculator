@@ -1,21 +1,48 @@
 h1 {
+   text-align: center;
    margin: 0;
    padding: 1px;
 }
 
-.output{
-   width: 24vw;
-   height: 15px;
-   outline: turquoise;
-   border: solid grey 1px;
-   border-radius: 4px;
-   padding: 5px;
-   margin: 1px 0 1.2em;
+.screen{
+   text-align: right;
+   grid-column: 1/-1;
+   border: solid turquoise 2px;
+   border-radius: 6px;
+   height: 6vh;
+   padding: 8px;
+   margin: 1px 0 .1em;
 }
 
- button {
-   font-size: 24px;
-   padding: 7px;
+button {
+   font-size: 20px;
+   padding: 4px 2px;
+   border: none;
+   box-shadow: 1px 1px 1px aqua;
+   border-radius: .7em;
+   outline: aqua;
    margin: 2px;
-} 
+}
+
+button:hover{
+   /* color: turquoise; */
+   background-color: turquoise;
+}
+
+.cal-grid {
+   width: auto;
+   min-height: 50vh;
+   display: grid;
+   grid-template-columns: repeat(4, 60px);
+   justify-content: center;
+}
+
+.span{
+   grid-column: span 2;
+}
+
+.btn-line {
+   padding: 3px;
+}
+
 
